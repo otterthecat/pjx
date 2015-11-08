@@ -21,7 +21,7 @@ var ajax = function(url, method, data){
         request.onerror = function () {
             reject(request.response);
         };
-        data ? request.send(data) || request.send();
+        data ? request.send(data) : request.send();
     });
 };
 
